@@ -17,7 +17,7 @@
 			<!-- start: Container -->
 			<div class="container">
 
-				<h2><i class="ico-usd ico-white"></i>Keranjang</h2>
+				<h2><i class="ico-usd ico-white"></i>Cart</h2>
 
 			</div>
 			<!-- end: Container  -->
