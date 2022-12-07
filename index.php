@@ -17,7 +17,7 @@
 				<h2>Ayam Bakar Gurih</h2>
 				<p>Ayam Bakar Dengan Cita Rasa manis gurih dipadukan dengan sambal cobek kecap. </p>
 				<a href="produk.php" class="da-link">Lihat Produk</a>
-				<div class="da-img"><img src="img/parallax-slider/1.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image01" /></div>
+				<div class="da-img"><img src="img/parallax-slider/ayam bakar.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image01" /></div>
 			</div>
 			<div class="da-slide">
 				<h2>Sayur Asem</h2>
