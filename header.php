@@ -25,31 +25,57 @@
 			            		<span class="icon-bar"></span>
 			            		<span class="icon-bar"></span>
 			          		</a>
+							  <body>
+
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo">KAMOLA</div>
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+	
+	<!-- USING CHECKBOX HACK -->
+
+<input type="checkbox" id="checkbox_toggle" />
+
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+</ul>
+</nav>
+<p>
+
+
 			          		<div class="nav-collapse collapse">
 			            		<ul class="nav">
 			              			<li class="active"><a href="index.php">Home</a></li>
-                                    <li class="dropdown">
+
+                                    <li class="services">
 			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-			                			<ul class="dropdown-menu">
+
+			                			<ul class="dropdown-menu"></ul>
 			                  				<li><a href="produk.php">Menu Makanan</a></li>
-			                			</ul>
-			              			</li>           
+			                			          
 									<li><a href="testimoni.php">Testimonial</a></li>
+
                                     <!-- <li><a href="detail.php">Cart</a></li>-->
                                     <li><a href="profil.php">About Us</a></li>
-			              			<li class="dropdown">
+
+			              			<li class="services">
 			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
 			                			<ul class="dropdown-menu">
+</ul>
+</li>
 			                  				<li><a href="login.html">Admin</a></li>
-			                  				<li><a href="index.html">Customer</a></li>
-											  <head>
+											<li><a href="index.html">Customer</a></li>
+</p>
+
+											<head>
 <style>
 	/* UTILITIES */
 
 * {
-
-margin: 0;
-padding: 0;
+margin: 1;
+padding: 3;
 box-sizing: border-box;
 }
 
@@ -61,92 +87,127 @@ a {
 text-decoration: none;
 }
 
-li {
-list-style: none;
+li{
+list-style: none; display:inline
 }
+	
+/* NAVBAR STYLING STARTS */
+
+
 .navbar {
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 20px;
+padding: 10px;
 background-color: teal;
-color: #fff;
+color: #ccc;
 }
 
 .nav-links a {
-color: #fff;
+color: #ccc;
 }
+
 /* LOGO */
+
 .logo {
-
-font-size: 32px;
-
+font-size: 30px;
 }
 
 /* NAVBAR MENU */
 
-.menu {
-
+.nav-collapse {
 display: flex;
-
 gap: 1em;
-
-font-size: 18px;
-
+font-size: 20px;
 }
 
-.menu li:hover {
-
+.nav-collapse li:hover {
 background-color: #4c9e9e;
-
-border-radius: 5px;
-
+border-radius: 8px;
 transition: 0.3s ease;
 
 }
 
-.menu li {
-
+.nav-collapse li {
 padding: 5px 14px;
-
 }
 
 /* DROPDOWN MENU */
 
 .services {
-
 position: relative;
-
 }
 
-.dropdown {
+.dropdown-menu {
 background-color: rgb(1, 139, 139);
 padding: 1em 0;
 position: absolute; /*WITH RESPECT TO PARENT*/
 display: none;
-border-radius: 8px;
+border-radius: 18px;
 top: 35px;
 }
 
-.dropdown li + li {
-margin-top: 10px;
-}
-
-.dropdown li {
+.dropdown-toggle {
 padding: 0.5em 1em;
 width: 8em;
 text-align: center;
 }
 
-.dropdown li:hover {
+.dropdown-menu li:hover {
 background-color: #4c9e9e;
 }
 
-.services:hover .dropdown {
+.services:hover .dropdown-menu {
 display: block;
 }
-</style>
+
+	/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+display: none;
+}
+
+/*MENU*/
+
+.hamburger {
+display: none;
+font-size: 24px;
+user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+
+.collapse li:hover {
+display: inline-block;
+background-color:#4c9e9e;
+transition: 0.3s ease;
+}
+
+.collapse li + li {
+margin-top: 20px;
+}
+input[type=checkbox]:checked ~ .menu{
+display: block;
+}
+.hamburger {
+display: block;
+}
+.dropdown-menu {
+left: 50%;
+top: 30px;
+transform: translateX(35%);
+}
+
+.dropdown-menu li:hover {
+background-color: #4c9e9e;
+}
+}
+
 </head>
+</style>
+											
 			                			</ul>
 			              			</li>
 			            		</ul>
