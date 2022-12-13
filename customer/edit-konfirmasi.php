@@ -147,7 +147,7 @@ $_SESSION['start_time'] = time();
 			}else{
 				$row = mysqli_fetch_assoc($sql);
 			}
-			/** if(isset($_POST['update'])){
+			if(isset($_POST['update'])){
 				$id_kon	        = $_POST['id_kon'];
 				$nopo	        = $_POST['nopo'];
 				$kd_cus	        = $_POST['kd_cus'];
@@ -163,11 +163,11 @@ $_SESSION['start_time'] = time();
 				}else{
 					echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data gagal disimpan, silahkan coba lagi.</div>';
 				}
-			}**/
+			}
 			
-			//if(isset($_GET['pesan']) == 'sukses'){
-			//	echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
-			//}
+			if(isset($_GET['pesan']) == 'sukses'){
+				echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
+			}
 			?>
            <!-- /.row -->
                     <br />
@@ -218,12 +218,12 @@ $_SESSION['start_time'] = time();
 						    <?php } ?>
                               
                               </select>
-                            <!--<option value="Mandiri">Transfer Mandiri</option>
+                            <option value="Mandiri">Transfer Mandiri</option>
                             <option value="BCA">Transfer BCA</option>
                             <option value="BNI">Transfer BNI</option>
                             <option value="BRI">Transfer BRI</option>
                             <option value="BTN">Transfer BTN</option>
-                            <option value="Lainnya">Transfer Bank Lainnya</option>-->
+                            <option value="Lainnya">Transfer Bank Lainnya</option>
                             </select>
                               
                             </div>
@@ -252,15 +252,15 @@ $_SESSION['start_time'] = time();
                           </div>
                           <div class="form-group">
                           
-                              <!--<label class="col-sm-2 col-sm-2 control-label">Status</label>
+                              <label class="col-sm-2 col-sm-2 control-label">Status</label>
                               <div class="col-sm-3">
                             <select id="status" name="status" class="form-control" autofocus="on" required>
                             <option> -- Pilih Status -- </option>
-                            <!--<option value="Bayar">Sudah di Bayar</option>
+                            <option value="Bayar">Sudah di Bayar</option>
                             <option value="Belum">Belum di Bayar</option>
                             </select>
                               
-                            </div>-->
+                            </div>
                             <label class="col-sm-2 col-sm-2 control-label">Status : </label>
                             <div class="col-sm-3">
                             <?php

@@ -94,7 +94,7 @@ echo "</table>";
       		
 			<hr>
 		
-			<!-- start Clients List
+			 start Clients List
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">

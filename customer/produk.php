@@ -37,9 +37,9 @@ if (empty($_SESSION['username'])){
 				
 		<!--start: Container -->
     	<div class="container"> 
-        <!--<div class="title"><h3>Keranjang Anda</h3></div>
+        <div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->            
+            </div>             
       		<!-- start: Row -->
             
       		<div class="row">
@@ -88,7 +88,7 @@ if (empty($_SESSION['username'])){
       		
 			<hr>
 		
-			<!-- start Clients List	
+			start Clients List	
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">

@@ -59,9 +59,9 @@ if (empty($_SESSION['username'])){
         		<p><a class="btn btn-success btn-large" href="profil.php">About Us &raquo;</a></p>
                                 
       		</div>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
+            <div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->
+            </div> 
 			<!-- end: Hero Unit -->
 
       		<!-- start: Row -->
@@ -88,14 +88,14 @@ if (empty($_SESSION['username'])){
               
               
               ?>
-<!---->
+
       		</div>
 			<!-- end: Row -->
       		
 		<!--	<hr>
 		
-			<!-- start Clients List -->	
-		<!--	<div class="clients-carousel">
+			 start Clients List -->	
+			<div class="clients-carousel">
 		
 				<ul class="slides clients">
 					<li><img src="img/logos/1.png" alt=""/></li>

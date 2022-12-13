@@ -147,7 +147,7 @@ $_SESSION['start_time'] = time();
 			}else{
 				$row = mysqli_fetch_assoc($sql);
 			}
-			/**if(isset($_POST['update'])){
+			if(isset($_POST['update'])){
 				$kd_dept	 = $_POST['kd_dept'];
 				$nik		 = $_POST['nik'];
 				$departemen	 = $_POST['departemen'];
@@ -161,11 +161,11 @@ $_SESSION['start_time'] = time();
 				}else{
 					echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data gagal disimpan, silahkan coba lagi.</div>';
 				}
-			}**/
+			}
 			
-			//if(isset($_GET['pesan']) == 'sukses'){
-			//	echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
-			//}
+			if(isset($_GET['pesan']) == 'sukses'){
+				echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
+			}
 			?>
            <!-- /.row -->
                     <br />

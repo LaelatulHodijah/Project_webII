@@ -85,7 +85,7 @@ $_SESSION['start_time'] = time();
 ?>
 <?php } ?>
                                 <!-- Menu Body -->
-                                <?php //include "menu1.php"; ?>
+                                <?php include "menu1.php"; ?>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -154,7 +154,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> Data Profil Customer </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                       <div class="table-responsive"> 
                     <?php
                     $kodesaya = $_SESSION['user_id'];
                     $query2="select * from customer where kd_cus='$kodesaya' limit 1";
@@ -206,7 +206,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><span class="glyphicon glyphicon-barcode"></span> Data Purchase Order </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                        <div class="table-responsive"> 
                        
                     <?php
                     $kodeku = $_SESSION['user_id'];
@@ -236,11 +236,11 @@ $_SESSION['start_time'] = time();
                     <td><center><?php echo $data['qty'];?></center></td>
                     <td><center>Rp. <?php echo number_format($data['total'],2,",",".");?></center></td>
                     <td><center><div id="thanks"><a class="btn btn-sm btn-danger" data-placement="bottom" data-toggle="tooltip" title="Cetak Invoice" href="cetak-po.php?hal=cetak&kd=<?php echo $data['nopo'];?>"><span class="glyphicon glyphicon-print"></span></a> 
-                    <!--<a class="btn btn-sm btn-success" data-placement="bottom" data-toggle="tooltip" title="Status PO" href="status-po.php?hal=status&kd=<?php echo $data['nopo'];?>"><span class="glyphicon glyphicon-tag"></span></a> -->
+                    <a class="btn btn-sm btn-success" data-placement="bottom" data-toggle="tooltip" title="Status PO" href="status-po.php?hal=status&kd=<?php echo $data['nopo'];?>"><span class="glyphicon glyphicon-tag"></span></a> -->
                     <a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit PO Terima" href="edit-po-terima.php?hal=edit&kode=<?php echo $data['id'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
                     </div></center></td>
-                    <!--<td><center><?php
-                            /**if($data['status'] == 'tetap'){
+                    <td><center><?php
+                            if($data['status'] == 'tetap'){
 								echo '<span class="label label-success">Tetap</span>';
 							}
                             else if ($data['status'] == 'kontrak' ){
@@ -251,16 +251,16 @@ $_SESSION['start_time'] = time();
 							}
                             else if ($data['status'] == 'outsource' ){
 								echo '<span class="label label-warning">Outsourcing</span>';
-							}**/
+							}
                     
-                    ?></center></td>-->
+                    ?></center></td>
                     </tr></div>
                  <?php   
               } 
               ?>
                    </tbody>
                    </table>
-                  <!-- </div>-->
+                   </div>
               </div> 
               </div>
 
@@ -274,7 +274,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><span class="glyphicon glyphicon-tag"></span> Konfirmasi Pembayaran </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                        <div class="table-responsive"> 
                     <?php
                     $kd = $_SESSION['user_id'];
                     $query3="select * from konfirmasi where kd_cus='$kd'";
@@ -315,7 +315,7 @@ $_SESSION['start_time'] = time();
                     
                     </center></td>
                     <td><center><div id="thanks"><a class="btn btn-sm btn-success" data-placement="bottom" data-toggle="tooltip" title="Detail Pembayaran" href="detail-konfirmasi.php?hal=detail&kd=<?php echo $data2['id_kon'];?>"><span class="glyphicon glyphicon-search"></span></a> 
-                    <!-- <a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Konfirmasi Prmbayaran" href="edit-konfirmasi.php?hal=edit&kode=<?php echo $data2['id_kon'];?>"><span class="glyphicon glyphicon-edit"></span></a>  -->
+                     <a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Konfirmasi Prmbayaran" href="edit-konfirmasi.php?hal=edit&kode=<?php echo $data2['id_kon'];?>"><span class="glyphicon glyphicon-edit"></span></a>  -->
                     </div></center></td>
                     </tr></div>
                  <?php   
@@ -323,7 +323,7 @@ $_SESSION['start_time'] = time();
               ?>
                    </tbody>
                    </table>
-                  <!-- </div>-->
+                   </div>
               </div> 
                         </section><!-- right col -->
 						

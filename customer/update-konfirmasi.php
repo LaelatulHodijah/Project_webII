@@ -19,7 +19,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 		if (move_uploaded_file($_FILES['nama_file']['tmp_name'], $gambar)) {
 			$sql="UPDATE konfirmasi SET bayar_via='$bayar_via', tanggal='$tanggal', jumlah='$jumlah', bukti_transfer='$gambar' WHERE id_kon='$id_kon'" or die(mysqli_error());
 			$res=mysqli_query($koneksi, $sql) or die (mysqli_error());
-			//echo "Gambar berhasil dikirim ke direktori".$gambar;
+			echo "Gambar berhasil dikirim ke direktori".$gambar;
             echo "<script>alert('Data Konfirmasi berhasil diupdate!'); window.location = 'index.php'</script>";	   
 		} else {
 		   echo "<p>Gambar gagal dikirim</p>";

@@ -9,7 +9,7 @@ require('../conn.php');
 
 $kodesaya = $_GET['kd'];
 //Select the Products you want to show in your PDF file
-//$result=mysqli_query($koneksi, "SELECT * FROM po_terima where id like '%$kodesaya%' ");
+$result=mysqli_query($koneksi, "SELECT * FROM po_terima where id like '%$kodesaya%' ");
 $result=mysqli_query($koneksi, "SELECT po_terima.*, konfirmasi.jumlah, produk.kode AS kode_prod, produk.nama, produk.harga, customer.alamat, customer.no_telp, customer.nama AS nama_cus, po.status FROM po_terima
 				LEFT JOIN produk ON po_terima.kode = produk.kode
 				LEFT JOIN customer ON po_terima.kd_cus = customer.kd_cus
@@ -61,7 +61,7 @@ $pdf = new FPDF('P','mm',array(210,297)); //L For Landscape / P For Portrait
 $pdf->AddPage();
 
 $pdf->Image('../img/logo1.png',10,10,-175);
-//$pdf->Image('../images/BBRI.png',190,10,-200);
+$pdf->Image('../images/BBRI.png',190,10,-200);
 $pdf->SetFont('Arial','B',13);
 $pdf->Cell(80);
 $pdf->Cell(30,10,'STRUK BELANJA',0,0,'C');
@@ -86,7 +86,7 @@ $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
 $pdf->SetX(160);
-//$pdf->Cell(45,8,'Periode : '.$periode,0,0,'R',1);
+$pdf->Cell(45,8,'Periode : '.$periode,0,0,'R',1);
 $pdf->Ln();
 
 //Field Name Position
@@ -105,7 +105,7 @@ $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
 $pdf->SetX(160);
-//$pdf->Cell(45,8,'Periode : '.$periode,0,0,'R',1);
+$pdf->Cell(45,8,'Periode : '.$periode,0,0,'R',1);
 $pdf->Ln();
 
 $Y_Fields_Name_position = 56;
@@ -116,13 +116,13 @@ $pdf->SetY($Y_Fields_Name_position);
 $pdf->SetX(5);
 $pdf->Cell(200,8,'Alamat : '.$alamat,0,0,'L',1);
 $pdf->SetX(205);
-/**$pdf->Cell(40,8,'',0,0,'L',1);
+$pdf->Cell(40,8,'',0,0,'L',1);
 $pdf->SetX(85);
 $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
 $pdf->SetX(160);**/
-//$pdf->Cell(45,8,'Tanggal Beli : '.$tanggal,0,0,'R',1);
+$pdf->Cell(45,8,'Tanggal Beli : '.$tanggal,0,0,'R',1);
 $pdf->Ln();
 
 //Field Name Position
@@ -203,11 +203,11 @@ $pdf->Ln(10);
 
 //After Footer
 
-//$Y_Fields_Name_position = 150;
-//$pdf->SetFillColor(255,255,255);
+$Y_Fields_Name_position = 150;
+$pdf->SetFillColor(255,255,255);
 //First create each Field Name
 //Bold Font for Field Name
-/**$pdf->SetFont('Arial','B',10);
+$pdf->SetFont('Arial','B',10);
 $pdf->SetY($Y_Fields_Name_position);
 $pdf->SetX(5);
 $pdf->Cell(40,8,'Kepala Sekolah,',0,0,'L',1);
@@ -218,7 +218,7 @@ $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
 $pdf->SetX(160);
-//$pdf->Cell(45,8,'Order : '.$tgl,0,0,'R',1);
+$pdf->Cell(45,8,'Order : '.$tgl,0,0,'R',1);
 $pdf->Ln();
 
 $Y_Fields_Name_position = 170;
@@ -236,10 +236,10 @@ $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
 $pdf->SetX(160);
-//$pdf->Cell(45,8,'Order : '.$tgl,0,0,'R',1);
+$pdf->Cell(45,8,'Order : '.$tgl,0,0,'R',1);
 $pdf->Ln();
 
-/**$pdf->SetY(-55);
+$pdf->SetY(-55);
 $pdf->SetFont('Arial','B',10);
 $pdf->Cell(10);
 $pdf->Cell(30,10,'PT. BBG',0,0,'C');

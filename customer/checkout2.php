@@ -9,7 +9,7 @@ if (empty($_SESSION['username'])){
         $b = $_GET['total'];
         $c = date("Y-m-d H:i:s");
         $d = "Cash On Delivery (COD)";
-        //$nopo = date("dmYHis");
+        $nopo = date("dmYHis");
         $query1 = mysqli_query($koneksi, "INSERT INTO konfirmasi (nopo, kd_cus, bayar_via, tanggal, jumlah, bukti_transfer, status) VALUES ('$_SESSION[user_id]', '$_SESSION[user_id]', '$d', '$c', '$b', 0, '$a')") or die(mysqli_error());
 
         $input = mysqli_query($koneksi, "INSERT INTO po_terima(nopo, kd_cus, kode, tanggal, qty, total) SELECT session, session, kode, tanggal, qty, jumlah FROM cart WHERE session='$_SESSION[user_id]'") or die(mysqli_error());

@@ -86,7 +86,7 @@ $_SESSION['start_time'] = time();
 ?>
 <?php } ?>
                                 <!-- Menu Body -->
-                                <?php // include "menu1.php"; ?>
+                                <?php  include "menu1.php"; ?>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -132,7 +132,7 @@ $_SESSION['start_time'] = time();
                         <small>Detail Status</small>
                     </h1>
              <?php
-             /**if(isset($_GET['hal']) == 'hapus'){
+             if(isset($_GET['hal']) == 'hapus'){
 				$kd_dept = $_GET['kd'];
 				$cek = mysqli_query($koneksi, "SELECT * FROM departemen WHERE kd_dept='$kd_dept'");
 				if(mysqli_num_rows($cek) == 0){
@@ -145,7 +145,7 @@ $_SESSION['start_time'] = time();
 						echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Data gagal dihapus.</div>';
 					}
 				}
-			}**/
+			}
 			?>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Customer</a></li>
@@ -168,7 +168,7 @@ $_SESSION['start_time'] = time();
                     $query = mysqli_query($koneksi, "SELECT * FROM po WHERE nopo='$_GET[kd]'");
                     $data  = mysqli_fetch_array($query);
                     ?>
-                                <!-- </div> -->
+                                 </div> 
                                 <div class="panel-body">
                       <table id="example" class="table table-hover table-bordered">
                     <tr>

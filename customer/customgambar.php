@@ -86,9 +86,9 @@ if (empty($_SESSION['username'])){
             
             Untuk mengupload desain gambar sesuai keinginan anda. Kalian bisa mengupload gambar pada web ini. Untuk desain yang bisa di custom gambar hanya untuk Kaos(T-shirt). <br/> <br />
             </blockquote>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
+            <div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->
+            </div> 
       <!-- end: Hero Unit -->
 
           <!-- start: Row -->
@@ -96,10 +96,10 @@ if (empty($_SESSION['username'])){
           
       <!-- end: Row -->
           
-    <!--  <hr>
+      <hr>
     
-      <!-- start Clients List --> 
-    <!--  <div class="clients-carousel">
+      <start Clients List> 
+      <div class="clients-carousel">
     
         <ul class="slides clients">
           <li><img src="img/logos/1.png" alt=""/></li>
@@ -117,8 +117,8 @@ if (empty($_SESSION['username'])){
       </div>
       <!-- end Clients List -->
 <?php
-/** if(isset($_POST['input'])){
-$namafolder="gambar_produk/"; //tempat menyimpan file
+if(isset($_POST['input'])){
+$namafolder="Gambar_Produk/"; //tempat menyimpan file
 
 if (!empty($_FILES["nama_file"]["tmp_name"]))
 {
@@ -139,7 +139,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 	
   
       $res=mysqli_query($koneksi, $sql and $query) or die (mysqli_error());
-      //echo "Gambar berhasil dikirim ke direktori".$gambar;
+      echo "Gambar berhasil dikirim ke direktori".$gambar;
             echo "<script>alert('Data Produk berhasil dimasukan!'); window.location = 'produk.php'</script>";    
     } else {
        echo "<p>Gambar gagal dikirim</p>";

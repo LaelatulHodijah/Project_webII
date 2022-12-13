@@ -39,7 +39,7 @@ if (empty($_SESSION['username'])){
                           $qu			= mysqli_query($koneksi, "UPDATE produk SET stok=(stok-'$qty') WHERE kode='$kode'");
                        
 						         echo "<script>alert('Produk ditambahkan ke keranjang!'); window.location = 'javascript:history.back()'</script>";   
-                                    //}
+                                    }
                         }else{
 						echo "<script>alert('Gagal Input!'); window.location = 'javascript:history.back()'</script>";
 	              	
@@ -47,5 +47,5 @@ if (empty($_SESSION['username'])){
                     }
 			} 
    		
-} 
+
             ?>

@@ -104,7 +104,7 @@ $data  = mysqli_fetch_array($query);
       		
 			<hr>
 		
-			<!-- start Clients List 
+			 start Clients List 
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">
@@ -121,7 +121,7 @@ $data  = mysqli_fetch_array($query);
 				</ul>
 		
 			</div>
-			end Clients List -->
+			end Clients List 
 		
 			
 		

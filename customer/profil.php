@@ -26,7 +26,7 @@
 
 	</div>
 	<!-- end: 
-	<!-- end: Slider -->
+	 end: Slider -->
 			
 	<!--start: Wrapper-->
 	<div id="wrapper">
@@ -44,9 +44,9 @@
             
             
             </blockquote>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
+            <div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->
+            </div> 
 			<!-- end: Hero Unit -->
 
       		<!-- start: Row -->
@@ -54,10 +54,10 @@
       		
 			<!-- end: Row -->
       		
-		<!--	<hr>
+			<hr>
 		
-			<!-- start Clients List -->	
-		<!--	<div class="clients-carousel">
+			 start Clients List -->	
+			<div class="clients-carousel">
 		
 				<ul class="slides clients">
 					<li><img src="img/logos/1.png" alt=""/></li>
@@ -109,7 +109,7 @@
 					</div>
 					<!-- end: Icon Box -->
 
-					<!-- start: Icon Box Start
+					 start: Icon Box Start
 					<div class="span6">
 						<div class="icons-box-vert">
 							<i class="ico-ipad ico-color circle-color big"></i>
@@ -122,7 +122,7 @@
 					</div>
 					<!-- end: Icon Box -->
 
-					<!-- start: Icon Box Start 
+					 start: Icon Box Start 
 					<div class="span6">
 						<div class="icons-box-vert">
 							<i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>

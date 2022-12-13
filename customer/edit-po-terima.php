@@ -86,7 +86,7 @@ $_SESSION['start_time'] = time();
 ?>
 <?php } ?>
                                 <!-- Menu Body -->
-                                <?php //include "menu1.php"; ?>
+                                <?php include "menu1.php"; ?>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -149,9 +149,9 @@ $_SESSION['start_time'] = time();
 			}
 			
 			
-			//if(isset($_GET['pesan']) == 'sukses'){
-			//	echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
-			//}
+			if(isset($_GET['pesan']) == 'sukses'){
+				echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data berhasil disimpan.</div>';
+			}
 			?>
            <!-- /.row -->
                     <br />

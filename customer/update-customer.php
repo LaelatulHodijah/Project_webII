@@ -1,7 +1,7 @@
 <?php
 include "../conn.php";
 if(isset($_POST['update'])){
-$namafolder="../admin/gambar_customer/"; //tempat menyimpan file
+$namafolder="../admin/Gambar_costumer/"; //tempat menyimpan file
 
 if (!empty($_FILES["nama_file"]["tmp_name"]))
 {
@@ -19,7 +19,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 		if (move_uploaded_file($_FILES['nama_file']['tmp_name'], $gambar)) {
 			$sql="UPDATE customer SET nama='$nama', alamat='$alamat', no_telp='$no_telp', username='$username', password='$password', gambar='$gambar' WHERE kd_cus='$kode'" or die(mysqli_error());
 			$res=mysqli_query($koneksi, $sql) or die (mysqli_error());
-			//echo "Gambar berhasil dikirim ke direktori".$gambar;
+			echo "Gambar berhasil dikirim ke direktori".$gambar;
             echo "<script>alert('Data Customer berhasil diupdate!'); window.location = 'index.php'</script>";	   
 		} else {
 		   echo "<p>Gambar gagal dikirim</p>";
