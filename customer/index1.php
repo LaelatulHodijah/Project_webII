@@ -109,7 +109,7 @@ $_SESSION['start_time'] = time();
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="<?php echo $_SESSION['gambar']; ?>" class="img-circle" alt="User Image" style="border: 2px solid #3C8DBC;" />
+                            <img src="<?php echo $_SESSION['gambar']; ?>" class="img-circle" alt="User Image" style="border: 0px solid #3C8DBC;" />
                         </div>
                         <div class="pull-left info">
                             <p>Selamat Datang,<br /><?php echo $_SESSION['fullname']; ?></p>
@@ -240,8 +240,8 @@ $_SESSION['start_time'] = time();
                     <a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit PO Terima" href="edit-po-terima.php?hal=edit&kode=<?php echo $data['id'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
                     </div></center></td>
                     <td><center><?php
-                            if($data['status'] == 'tetap'){
-								echo '<span class="label label-success">Tetap</span>';
+                            /**if($data['status'] == 'tetap'){
+								//echo '<span class="label label-success">Tetap</span>';
 							}
                             else if ($data['status'] == 'kontrak' ){
 								echo '<span class="label label-primary">Kontrak</span>';
@@ -251,7 +251,7 @@ $_SESSION['start_time'] = time();
 							}
                             else if ($data['status'] == 'outsource' ){
 								echo '<span class="label label-warning">Outsourcing</span>';
-							}
+							}/*/
                     
                     ?></center></td>
                     </tr></div>

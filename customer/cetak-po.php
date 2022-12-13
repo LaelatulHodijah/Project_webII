@@ -121,7 +121,7 @@ $pdf->SetX(85);
 $pdf->Cell(50,8,'',0,0,'C',1);
 $pdf->SetX(135);
 $pdf->Cell(25,8,'',0,0,'C',1);
-$pdf->SetX(160);**/
+$pdf->SetX(160);
 $pdf->Cell(45,8,'Tanggal Beli : '.$tanggal,0,0,'R',1);
 $pdf->Ln();
 
@@ -228,7 +228,7 @@ $pdf->SetFillColor(255,255,255);
 $pdf->SetFont('Arial','B',10);
 $pdf->SetY($Y_Fields_Name_position);
 $pdf->SetX(5);
-$pdf->Cell(40,8,'Hakko Bio Richard, A.Md Kom',0,0,'L',1);
+$pdf->Cell(40,8,'Eri Kurniawan, A.Md Kom',0,0,'L',1);
 $pdf->SetX(160);
 $pdf->Cell(40,8,'',0,0,'L',1);
 $pdf->SetX(85);
@@ -250,7 +250,6 @@ $pdf->Cell(10);
 $pdf->Cell(30,10,'( ............................................................)',0,0,'C');
 $pdf->Cell(107);
 $pdf->Cell(30,10,'( ............................................................)',0,0,'C');
-**/
 $pdf->Output();
 }
 ?>
