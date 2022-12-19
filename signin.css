@@ -42,3 +42,23 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+  
+        /*untuk teks heading di tag <body>*/
+        h2
+        {
+            background-color: white;
+            color: crimson;
+            font-family: sans-serif;
+            text-align: center;
+            width: 45%;
+            margin:auto;
+            padding: 20px;
+        }
+ 
+        body
+        {
+            background-image: url('POLINELA.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+   

@@ -1,8 +1,8 @@
 <?php
 $namafolder="gambar_admin/"; //tempat menyimpan file
-/*
+
 $con=mysql_connect("localhost","root","") or die("Gagal");
-mysql_select_db("ecommerce")  or die("Gagal");*/
+mysql_select_db("ecommerce")  or die("Gagal");
 include "../conn.php";
 
 if (!empty($_FILES["nama_file"]["tmp_name"]))
@@ -33,7 +33,7 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 	echo "Anda belum memilih gambar";
 }
 
-/*include "../conn.php";
+include "../conn.php";
 $user_id  = $_POST['user_id'];
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -43,7 +43,7 @@ if ($query){
 	echo "<script>alert('Data Admin Berhasil dimasukan!'); window.location = 'admin.php'</script>";	
 } else {
 	echo "<script>alert('Data Admin Gagal dimasukan!'); window.location = 'admin.php'</script>";	
-}*/
+}
 
 
 ?>

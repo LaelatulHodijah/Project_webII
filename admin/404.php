@@ -137,25 +137,6 @@ $_SESSION['start_time'] = time();
                     </ol>
                 </section>
 
-                <!-- Main content -->
-                <section class="content">
-
-           <!-- /.row -->
-                    <br />
-                    <!-- Main row -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                        <pre>
-                        Ups.. Menu ini hanya ada di versi pro, untuk mendapatkannya silahkan hubungi :<br />
-                        Telp    :   0856 949 848 03
-                        WA      :   <a href="https://api.whatsapp.com/send?phone=6285694984803&text=Hallo%20Hakko%20Blogs%20Saya%20Mau%20Order%20warnasol%20Versi%20pro%20nya&source=&data=">0856 949 848 03</a>
-                        E-mail	:   hakkobiorichard@gmail.com
-                        Blog	:   <a href="https://www.hakkoblogs.com">www.hakkoblogs.com</a>
-                        </pre>
-          		        </div><!-- col-lg-12--> 
-                    </div><!-- /.row (main row) -->
-
-                </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
 

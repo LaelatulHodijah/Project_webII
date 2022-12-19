@@ -6,7 +6,7 @@ if (empty($_SESSION['username'])){
 	include "../conn.php";
 	$cek = mysqli_query($koneksi, "SELECT * FROM custom WHERE status='N'");
 
-//$jml_data = mysql_num_rows(mysql_query("SELECT * FROM custom WHERE status='N'"));
+$jml_data = mysql_num_rows(mysql_query("SELECT * FROM custom WHERE status='N'"));
 
 ?>
 <!DOCTYPE html>
@@ -245,7 +245,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><i class="fa fa-user"></i> Data Produk </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                        <div class="table-responsive"> -->
                     <?php
                     $query1="select * from produk order by kode DESC limit 5";
                     $hasil=mysqli_query($koneksi, $query1) or die(mysqli_error());
@@ -268,7 +268,7 @@ $_SESSION['start_time'] = time();
                     <td><center><?php echo $data['kode'];?></center></td>
                     <td><a href="detail-karyawan.php?hal=edit&kd=<?php echo $data['kode'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo $data['nama'];?></td>
                     <td><center>Rp. <?php echo number_format($data['harga'],2,",",".");?></center></td>
-                    <!--<td><center><?php
+                    <td><center><?php
                             /**if($data['status'] == 'tetap'){
 								echo '<span class="label label-success">Tetap</span>';
 							}
@@ -289,7 +289,7 @@ $_SESSION['start_time'] = time();
               ?>
                    </tbody>
                    </table>
-                  <!-- </div>-->
+                   </div>
                 <div class="text-right">
                   <a href="produk.php" class="btn btn-sm btn-primary">Menu Produk<i class="fa fa-arrow-circle-right"></i></a>
               
@@ -306,7 +306,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><i class="fa fa-user"></i> Data Admin </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                        <div class="table-responsive"> -->
                     <?php
                     $query2="select * from user order by user_id desc limit 5";
                     $hasil1=mysqli_query($koneksi, $query2) or die(mysqli_error());
@@ -328,8 +328,8 @@ $_SESSION['start_time'] = time();
                     <td><center><?php echo $no; ?></center></td>
                     <td><center><a href="detail-admin.php?hal=edit&kd=<?php echo $data1['user_id'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo $data1['username']; ?></a></center></td>
                     <td><center><?php echo $data1['fullname']; ?></center></td>
-                    <!--<td><center><?php 
-                            /**if($data1['level'] == 'admin'){
+                    <td><center><?php 
+                            if($data1['level'] == 'admin'){
 								echo '<span class="label label-success">Admin</span>';
 							}
                             else if ($data1['level'] == 'superuser' ){
@@ -337,7 +337,7 @@ $_SESSION['start_time'] = time();
 							}
                             else if ($data1['level'] == 'user' ){
 								echo '<span class="label label-info">User</span>';
-							}**/
+							}
                              ?></center></td>-->
                     </tr></div>
                  <?php   
@@ -345,7 +345,7 @@ $_SESSION['start_time'] = time();
               ?>
                    </tbody>
                    </table>
-                  <!-- </div>-->
+                  </div>
                 <div class="text-right">
                   <a href="admin.php" class="btn btn-sm btn-info">Menu Admin <i class="fa fa-arrow-circle-right"></i></a>
               

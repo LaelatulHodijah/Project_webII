@@ -147,7 +147,8 @@ $_SESSION['start_time'] = time();
               <form action='admin.php' method="POST">
           
 	       <input type='text' class="form-control" style="margin-bottom: 4px;" name='qcari' placeholder='Cari berdasarkan User ID dan Username' required /> 
-           <input type='submit' value='Cari Data' class="btn btn-sm btn-primary" /> <a href='admin.php' class="btn btn-sm btn-success" >Refresh</i></a>
+           <input type='submit' value='Cari Data' class="btn btn-sm btn-primary" /> 
+           <a href='admin.php' class="btn btn-sm btn-success" >Refresh</i></a>
           	</div>
               </div>
            <!-- /.row -->
@@ -160,7 +161,7 @@ $_SESSION['start_time'] = time();
                         <h3 class="panel-title"><i class="fa fa-user"></i> Data Admin </h3> 
                         </div>
                         <div class="panel-body">
-                       <!-- <div class="table-responsive"> -->
+                        <div class="table-responsive"> 
                     <?php
                     $query1="select * from user";
                     
@@ -192,8 +193,8 @@ $_SESSION['start_time'] = time();
                     <td><center><?php echo $data['username'];?></center></td>
                     <td><center><?php echo $data['password'];?></center></td>
                     <td><center><a href="detail-admin.php?hal=edit&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-user"></span> <?php echo $data['fullname']; ?></a></center></td>
-                    <!--<td><center><?php 
-                            /**if($data['level'] == 'admin'){
+                    <td><center><?php 
+                            if($data['level'] == 'admin'){
 								echo '<span class="label label-success">Admin</span>';
 							}
                             else if ($data['level'] == 'superuser' ){
@@ -201,17 +202,20 @@ $_SESSION['start_time'] = time();
 							}
                             else if ($data['level'] == 'user' ){
 								echo '<span class="label label-info">User</span>';
-							}**/
+							}
                              ?></center></td>-->
-                    <!--<td><center><img src="<?php //echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
+                    <td><center><img src="<?php echo $data['gambar']; ?>" class="img-circle" height="80" width="75" style="border: 3px solid #888;" /></center></td>-->
                     <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Admin" href="edit-admin.php?hal=edit&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
-                        <a onclick="return confirm ('Yakin hapus <?php echo $data['fullname'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Admin" href="hapus-admin.php?hal=hapus&kd=<?php echo $data['user_id'];?>"><span class="glyphicon glyphicon-trash"></a></center></td></tr></div>
+                        <a onclick="return confirm ('Yakin hapus <?php echo $data['fullname'];?>.?');" 
+                        class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Admin" href="hapus-admin.php?hal=hapus&kd=
+                        <?php echo $data['user_id'];?>">
+                        <span class="glyphicon glyphicon-trash"></a></center></td></tr></div>
                  <?php   
               } 
               ?>
                    </tbody>
                    </table>
-                  <!-- </div>-->
+                 </div>
                 <div class="text-right">
                   <a href="input-admin.php" class="btn btn-sm btn-warning">Tambah Admin <i class="fa fa-arrow-circle-right"></i></a>
               
