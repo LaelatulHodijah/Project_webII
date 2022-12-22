@@ -76,9 +76,6 @@ if (empty($_SESSION['username'])){
                         <div class="title"><h3><?php echo $data['nama']; ?></h3></div>
                         <img src="../admin/<?php echo $data['gambar']; ?>" style="border: 2px solid grey; border-radius: 5px; width: 250px; height: 200px;" />
 						<div><h3>Rp.<?php echo number_format($data['harga'],2,",",".");?></h3></div>
-					<!--	<p>
-						
-						</p> -->
 						<div class="clear"><a href="detailproduk.php?kd=<?php echo $data['kode'];?>" class="btn btn-lg btn-danger">Details</a> <a href="addtocart.php?kd=<?php echo $data['kode'];?>" class="btn btn-lg btn-success">Buy &raquo;</a></div>
 					
                     </div>
