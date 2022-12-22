@@ -64,9 +64,9 @@ echo "<table border=0>";
 
 
 {
-$pisah = explode("|",$isi);
-echo "<tr><td>$pisah[0], $pisah[1]</td></tr>";
-echo "<tr><td><font color=red>$pisah[2]</font>, Bilang</td></tr>";
+$pisah = explode ("|",isset($isi));
+echo "<tr><td>$pisah[0], $pisah";
+echo "<tr><td><font color=red>$pisah</font>";
 echo "<tr><td>$pisah[4]</td></tr>
 <tr><td>&nbsp;</td><td>&nbsp;</td></tr>";
 }
