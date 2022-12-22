@@ -54,7 +54,7 @@ if (empty($_SESSION['username'])){
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       	<div class="hero-unit">
         		<p>
-                Kantin KAMOLA Merupakan kantin polinela online yang menyediakan makanan sehat dan bergizi yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
+                KAMOLA Merupakan kantin polinela online yang menyediakan makanan sehat dan bergizi yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
 				</p>
         		<p><a class="btn btn-success btn-large" href="profil.php">About Us &raquo;</a></p>
                                 
@@ -124,7 +124,7 @@ if (empty($_SESSION['username'])){
 							<i class="ico-ok ico-color circle-color big"></i>
 							<div class="icons-box-vert-info">
 								<h3>Pengiriman Cepat</h3>
-								<p>Kantin KAMOLA siap mengirim pesanan anda secara gratis dengan radius maksimal 5 KM.</p>
+								<p>KAMOLA siap mengirim pesanan anda secara gratis dengan radius maksimal 5 KM.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -137,7 +137,7 @@ if (empty($_SESSION['username'])){
 							<i class="ico-cup  ico-white circle-color-full big-color"></i>
 							<div class="icons-box-vert-info">
 								<h3>Rasa Juara</h3>
-								<p>Kantin KAMOLA memiliki cita rasa yang berbeda dari kantin lainnya, di proses higienis dan dari bahan berkualitas.</p>
+								<p>KAMOLA memiliki cita rasa yang berbeda dari kantin lainnya, di proses higienis dan dari bahan berkualitas.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
