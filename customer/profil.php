@@ -39,8 +39,8 @@
             <blockquote style="font-size: medium;">
             <b>Profil Kami : </b>
             <br />
-            <b>Kantin KAMOLA</b> adalah sebuah kantin yang menyediakan makanan sehat dan bergizi yang berlokasi di kantin polinela
-            <br/><br /> <b>Kantin KAMOLA</b> menerima pesanan makanan untuk catering, arisan, pesta dan nasi box. <br /> 
+            <b>KAMOLA</b> adalah sebuah kantin yang menyediakan makanan sehat dan bergizi yang berlokasi di kantin polinela
+            <br/><br /> <b>KAMOLA</b> menerima pesanan makanan untuk catering, arisan, pesta dan nasi box. <br /> 
             
             
             </blockquote>
@@ -56,7 +56,7 @@
       		
 			<hr>
 		
-			 start Clients List -->	
+			 <!--start Clients List -->	
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">
@@ -133,7 +133,7 @@
 							<div class="clear"></div>
 						</div>
 					</div>
-					 end: Icon Box -->
+					 <!--end: Icon Box -->
 
 				</div>
 				<!-- end: Icon Boxes -->
@@ -161,7 +161,7 @@
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<a href="#"><img src="../img/logo4.jpeg" alt="logo" /></a>
+						<a href="#"><img src="../img/logo4.1.png" alt="logo" /></a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->
