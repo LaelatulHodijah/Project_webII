@@ -21,7 +21,7 @@
 			</div>
 			<div class="da-slide">
 				<h2>Sayur Asem</h2>
-				<p>Makanan khas sunda yang melegenda dan mendunia dengan cita rasa asam, gurih dan pedas.</p>
+				<p>Makanan sehat dan bergizi yang melegenda dan mendunia dengan cita rasa asam, gurih dan pedas.</p>
 				<a href="produk.php" class="da-link">Lihat Produk</a>
 				<div class="da-img"><img src="img/parallax-slider/2.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image03" /></div>
 				
@@ -50,14 +50,14 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
         		<p>
-                Kantin KAMOLA Merupakan warung sunda online yang menyediakan makanan khas sunda yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
+                Kantin KAMOLA Merupakan Kantin online yang menyediakan makanan khas sunda yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
 				</p>
         		<p><a class="btn btn-success btn-large" href="profil.php">Tentang Kami &raquo;</a></p>
                                 
       		</div>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
+            <div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->
+            </div> 
 			<!-- end: Hero Unit -->
 
       		<!-- start: Row -->
@@ -72,9 +72,7 @@
                         <div class="title"><h3><?php echo $data['nama']; ?></h3></div>
                         <img src="admin/<?php echo $data['gambar']; ?>" style="border: 2px solid grey; border-radius: 5px; width: 250px; height: 200px;"  />
 						<div><h3>Rp.<?php echo number_format($data['harga'],2,",",".");?></h3></div>
-					<!--	<p>
-						
-						</p> -->
+					
 						<div class="clear"><a href="detailproduk.php?kd=<?php echo $data['kode'];?>" class="btn btn-lg btn-danger">Detail</a> <a href="detailproduk.php?kd=<?php echo $data['kode'];?>" class="clear"> <a href="index.html" class="btn btn-lg btn-success">Beli &raquo;</a></div>
 					
                     </div>
