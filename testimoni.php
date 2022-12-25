@@ -86,7 +86,7 @@ echo "</table>";
       		
 			<hr>
 		
-			<!-- start Clients List
+			
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">
@@ -103,7 +103,7 @@ echo "</table>";
 				</ul>
 		
 			</div>
-			 end Clients List -->
+			 
 		
 					
 		</div>

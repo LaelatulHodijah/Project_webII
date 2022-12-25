@@ -133,8 +133,8 @@ $_SESSION['start_time'] = time();
                     </h1>
              <?php
              if(isset($_GET['hal']) == 'hapus'){
-				$kd_dept = $_GET['kd'];
-				$cek = mysqli_query($koneksi, "SELECT * FROM departemen WHERE kd_dept='$kd_dept'");
+				
+				$cek = mysqli_query($koneksi, "SELECT * FROM departemen WHERE nama=''");
 				if(mysqli_num_rows($cek) == 0){
 					echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Data tidak ditemukan.</div>';
 				}else{
