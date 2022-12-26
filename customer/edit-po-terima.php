@@ -202,7 +202,7 @@ $_SESSION['start_time'] = time();
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Style</label>
                               <div class="col-sm-3">
-                            <input name="style" type="text" id="style" value="<?php echo $row['style']; ?>" class="form-control" autocomplete="off" required />
+                            <input name="style" type="text" id="style" value="<?php echo $row['style']; ?>" class="form-control" autocomplete="off" required >
                               
                             </div>
                           </div>
@@ -213,23 +213,11 @@ $_SESSION['start_time'] = time();
                               
                             </div>
                           </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Size</label>
-                              <div class="col-sm-3">
-                            <select id="size" name="size" class="form-control" required>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                            <option value="XXL">XXL</option>
-                            <option value="XXXL">XXXL</option>
+                         
                             </select>
                               
                             </div>
-                            <label class="col-sm-2 col-sm-2 control-label">Size Sebelumnya</label>
-                              <div class="col-sm-3">
-                            <span class="label label-warning"><?php echo $row['size']; ?></span>
-                            </div>
+                            
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">QTY</label>
@@ -253,7 +241,7 @@ $_SESSION['start_time'] = time();
                       </form>
                   </div>
                   </div>
-                  </div>/*/
+                  </div>
           		</div><!-- col-lg-12--> 
                     </div><!-- /.row (main row) -->
 

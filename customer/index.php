@@ -18,22 +18,22 @@ if (empty($_SESSION['username'])){
 
 		<div id="da-slider" class="da-slider">
 			<div class="da-slide">
-				<h2>Ayam Bakar Gurih</h2>
+				<h2><font color="green">Ayam Bakar Gurih </h2>
 				<p>Ayam Bakar Dengan Cita Rasa manis gurih dipadukan dengan sambal cobek kecap. </p>
-				<a href="produk.php" class="da-link">Lihat Produk</a>
+				<a href="produk.php" class="da-link"><font color="green">Lihat Produk</a>
 				<div class="da-img"><img src="../img/parallax-slider/ayam bakar.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image01" /></div>
 			</div>
 			<div class="da-slide">
-				<h2>Sayur Asem</h2>
+				<h2><font color="green">Sayur Asem</h2>
 				<p>Makanan sehat dan bergizi yang melegenda dan mendunia dengan cita rasa asam, gurih dan pedas.</p>
-				<a href="produk.php" class="da-link">Lihat Produk</a>
+				<a href="produk.php" class="da-link"><font color="green">Lihat Produk</a>
 				<div class="da-img"><img src="../img/parallax-slider/2.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image03" /></div>
 				
 			</div>
 			<div class="da-slide">
-				<h2>Ayam Kremes</h2>
+				<h2><font color="green">Ayam Kremes</h2>
 				<p>Ayam kremes dengan balutan telur dan dipadukan dengan sambal goreng terasi.</p>
-				<a href="produk.php" class="da-link">Lihat Produk</a>
+				<a href="produk.php" class="da-link"><font color="green">Lihat Produk</a>
 				<div class="da-img"><img src="../img/parallax-slider/3.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image02" /></div>
 			</div>
 			<nav class="da-arrows">

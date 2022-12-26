@@ -29,7 +29,7 @@
 
 <nav class="navbar">
 <!-- LOGO -->
-<div class="logo">KAMOLA</div>
+<div class="logo"><font color="green">KAMOLA</div>
 <!-- NAVIGATION MENU -->
 <ul class="nav-links">
 	

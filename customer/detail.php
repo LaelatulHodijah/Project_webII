@@ -186,7 +186,7 @@ if (empty($_SESSION['username'])){
 				<!-- start: Footer Menu Logo -->
 				<div class="span2">
 					<div id="footer-menu-logo">
-						<a href="#"><img src="../img/logo.km.jpeg" alt="logo" /></a>
+						<a href="#"><img src="../img/logo.jpeg" alt="logo" /></a>
 					</div>
 				</div>
 				<!-- end: Footer Menu Logo -->

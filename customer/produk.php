@@ -88,7 +88,7 @@ if (empty($_SESSION['username'])){
       		
 			<hr>
 		
-			start Clients List	
+			
 			<div class="clients-carousel">
 		
 				<ul class="slides clients">
@@ -106,15 +106,15 @@ if (empty($_SESSION['username'])){
 		
 			</div>
 			</hr>
-			end Clients List -->
+			
 		
 		
 		
 		</div>
-		<!--end: Container-->	
+		
 
 	</div>
-	<!-- end: Wrapper  -->			
+				
 
     <!-- start: Footer Menu -->
 	<div id="footer-menu" class="hidden-tablet hidden-phone">
