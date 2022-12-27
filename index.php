@@ -29,7 +29,7 @@
 			<div class="da-slide">
 				<h2><font color="green">Ayam Kremes</h2>
 				<p>Ayam kremes dengan balutan telur dan dipadukan dengan sambal goreng terasi.</p>
-				<a href="produk.php" class="da-link"><font color="green">Lihat Produk</a>
+				<a href="produk.php" class="da-link">Lihat Produk</a>
 				<div class="da-img"><img src="img/parallax-slider/3.jpg" style="border: 3px solid whitesmoke; border-radius: 10px;" alt="image02" /></div>
 			</div>
 			<nav class="da-arrows">
@@ -50,7 +50,7 @@
       		<!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
       		<div class="hero-unit">
         		<p>
-                Kantin KAMOLA Merupakan Kantin online yang menyediakan makanan khas sunda yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
+                KAMOLA Merupakan Kantin online yang menyediakan makanan khas sunda yang dapat di pesan secara online dengan metode pembayaran cash on delivery.
 				</p>
         		<p><a class="btn btn-success btn-large" href="profil.php">Tentang Kami &raquo;</a></p>
                                 
@@ -99,7 +99,7 @@
 							<i class="ico-ok ico-color circle-color big"></i>
 							<div class="icons-box-vert-info">
 								<h3>Pengiriman Cepat</h3>
-								<p>Kantin KAMOLA siap mengirim pesanan anda secara gratis dengan radius maksimal 5 KM.</p>
+								<p>KAMOLA siap mengirim pesanan anda secara gratis dengan radius maksimal 5 KM.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -112,7 +112,7 @@
 							<i class="ico-cup  ico-white circle-color-full big-color"></i>
 							<div class="icons-box-vert-info">
 								<h3>Rasa Juara</h3>
-								<p>Kantin KAMOLA memiliki cita rasa yang berbeda dari warung sunda lainnya, di proses higienis dan dari bahan berkualitas.</p>
+								<p>KAMOLA Merupakan Kantin Modern yang disediakan oleh Politeknik Negeri Lampung dengan berbagai menu makanan dan minuman yang sangat menggugah selere.</p>
 							</div>
 							<div class="clear"></div>
 						</div>
